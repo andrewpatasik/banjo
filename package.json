@@ -25,7 +25,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build-css:watch": "postcss ./src/input.css -o ./public/main.css",
+    "build-css:watch": "postcss ./src/input.css -o ./public/main.css -w",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
