@@ -1,11 +1,16 @@
-import MainLayout from "./pages/MainLayout";
+import { useEffect } from "react";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
+  useEffect(() => {
+    document.title = "Banjoo";
+  }, []);
+
   return (
     <div>
-      <MainLayout />
+      <Outlet />
     </div>
   );
-}
+};
 
 export default App;
