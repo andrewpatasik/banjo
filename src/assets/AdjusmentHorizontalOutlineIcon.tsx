@@ -1,4 +1,4 @@
-const AdjusmentHorizontalIcon = (prop: { width: string }) => {
+const AdjusmentHorizontalOutlineIcon = (prop: { width: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +17,4 @@ const AdjusmentHorizontalIcon = (prop: { width: string }) => {
   );
 };
 
-export default AdjusmentHorizontalIcon;
+export default AdjusmentHorizontalOutlineIcon;

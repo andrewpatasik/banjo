@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 const App = () => {
   useEffect(() => {
-    document.title = "Banjoo";
+    document.title = "Banjo | Budgeting Companion";
   }, []);
 
   return (

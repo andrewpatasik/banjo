@@ -1,4 +1,4 @@
-const PieChartIcon = (prop: { width: string }) => {
+const PieChartOutlineIcon = (prop: { width: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -22,4 +22,4 @@ const PieChartIcon = (prop: { width: string }) => {
   );
 };
 
-export default PieChartIcon;
+export default PieChartOutlineIcon;
