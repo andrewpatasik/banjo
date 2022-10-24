@@ -36,8 +36,8 @@ const Navbar = () => {
       </nav>
 
       {/* Bottombar */}
-      <nav className="fixed bottom-0 w-full h-16">
-        <ul className="flex space-x-2 flex items-center justify-evenly">
+      <nav className="fixed bottom-0 w-full h-16 flex items-center p-3">
+        <ul className="w-full flex space-x-2 flex items-center justify-evenly">
           <li>
             <NavigationLink
               to="/dashboard"
