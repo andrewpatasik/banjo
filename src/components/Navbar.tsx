@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   AdjusmentHorizontalOutlineIcon,
   AdjusmentHorizontalSolidIcon,
@@ -11,14 +11,31 @@ import {
 } from "../assets";
 import NavigationLink from "./NavigationLink";
 
+const extractSubRoute = (pathname: string): string => {
+  const subroute = pathname.split("/")[1];
+
+  return subroute !== "dashboard" ? subroute : "Banjo";
+};
+
 const Navbar = () => {
+  const { pathname } = useLocation();
+
+  const subroute = extractSubRoute(pathname);
+
   return (
     <div>
       {/* Topbar */}
-      <nav className="sticky top-0 w-full flex justify-between p-3">
+      <nav className="sticky top-0 w-full flex items-center justify-between p-3">
         <div>
-          <h1 className="text-3xl">Banjo</h1>
+          <h1
+            className={`${
+              subroute === "Banjo" ? "text-4xl font-logo" : "text-3xl capitalize font-bold"
+            }`}
+          >
+            {subroute}
+          </h1>
         </div>
+        {subroute === "Banjo" ? 
         <ul className="flex items-center space-x-3">
           <li>
             <button className="flex items-center">
@@ -32,7 +49,7 @@ const Navbar = () => {
               </div>
             </Link>
           </li>
-        </ul>
+        </ul> : <></> }
       </nav>
 
       {/* Bottombar */}
@@ -88,7 +105,6 @@ const Navbar = () => {
                 </div>
               }
             ></NavigationLink>
-
           </li>
         </ul>
       </nav>

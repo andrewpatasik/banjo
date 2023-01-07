@@ -10,7 +10,7 @@ const MainLayout = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen scrollbar-hide">
       <Navbar />
       <main className="flex flex-col items-center justify-center min-h-[calc(100vh_-_4rem)]">
         <Outlet />
