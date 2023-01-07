@@ -37,7 +37,7 @@ const Navbar = () => {
 
       {/* Bottombar */}
       <nav className="fixed bottom-0 w-full h-16">
-        <ul className="flex space-x-2 flex items-center justify-evenly">
+        <ul className="h-full flex space-x-2 flex items-center justify-evenly">
           <li>
             <NavigationLink
               to="/dashboard"
