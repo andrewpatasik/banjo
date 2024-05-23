@@ -6,7 +6,6 @@ import {
   HomeSolidIcon,
   PieChartOutlineIcon,
   PieChartSolidIcon,
-  PlusCircleSolidIcon,
   UserRoundedIcon,
 } from "../assets";
 import NavigationLink from "./NavigationLink";

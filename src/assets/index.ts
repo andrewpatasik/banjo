@@ -8,3 +8,5 @@ export { default as UserRoundedIcon } from './UserRoundedIcon';
 export { default as MagnifyingGlassIcon } from './MagnifyingGlassIcon';
 export { default as PlusCircleSolidIcon } from './PlusCircleSolidIcon';
 export { default as PlusMiniIcon } from './PlusMiniIcon';
+export { default as WalletSolidIcon } from './WalletSolidIcon';
+export { default as CalendarMicroIcon } from './CalendarMicroIcon';
