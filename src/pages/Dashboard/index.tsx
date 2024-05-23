@@ -1,9 +1,9 @@
-import Fab from "../../components/Fab";
+import { Fab, Heading } from "../../components";
 
 const Dashboard = () => {
   return (
-    <div className="relative flex flex-col flex-1 w-full items-center justify-center">
-      <h1 className="text-2xl">Dashboard</h1>
+    <div className="relative flex flex-col flex-1 w-full">
+      <Heading />
       <Fab />
     </div>
   );
