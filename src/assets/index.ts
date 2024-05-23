@@ -7,3 +7,4 @@ export { default as AdjusmentHorizontalSolidIcon } from './AdjusmentHorizontalSo
 export { default as UserRoundedIcon } from './UserRoundedIcon';
 export { default as MagnifyingGlassIcon } from './MagnifyingGlassIcon';
 export { default as PlusCircleSolidIcon } from './PlusCircleSolidIcon';
+export { default as PlusMiniIcon } from './PlusMiniIcon';

@@ -21,11 +21,6 @@ const Navbar = () => {
         </div>
         <ul className="flex items-center space-x-3">
           <li>
-            <button className="flex items-center">
-              <PlusCircleSolidIcon width="w-9 h-9" />
-            </button>
-          </li>
-          <li>
             <Link to="/profile">
               <div className="flex flex-col items-center justify-center space-y-1">
                 <UserRoundedIcon width="w-12 h-12" />
@@ -36,21 +31,21 @@ const Navbar = () => {
       </nav>
 
       {/* Bottombar */}
-      <nav className="fixed bottom-0 w-full h-16">
-        <ul className="flex space-x-2 flex items-center justify-evenly">
+      <nav className="fixed bottom-0 w-full py-4 z-10 bg-gray-50">
+        <ul className="flex space-x-2 items-center justify-evenly">
           <li>
             <NavigationLink
               to="/dashboard"
               activeIcon={
                 <div className="flex flex-col items-center justify-center space-y-1">
                   <HomeSolidIcon width="w-6 h-6" />
-                  <span className="text-sm">Dashboard</span>
+                  <span className="text-sm">Home</span>
                 </div>
               }
               inactiveIcon={
                 <div className="flex flex-col items-center justify-center space-y-1">
                   <HomeOutlineIcon width="w-6 h-6" />
-                  <span className="text-sm">Dashboard</span>
+                  <span className="text-sm">Home</span>
                 </div>
               }
             ></NavigationLink>
