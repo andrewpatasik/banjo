@@ -2,7 +2,7 @@
 const Heading = () => {
   return (
     <>
-      <div className="px-4 flex flex-col space-y-1.5">
+      <div className="px-4 flex flex-col space-y-1">
         <div className="flex items-center justify-between">
           <div className="flex space-x-1 items-center">
             <img
@@ -20,7 +20,7 @@ const Heading = () => {
             <p className="text-xs font-light text-gray-400 tracking-wider">
               Your remaining budget
             </p>
-            <h1 className="text-gray-700 text-3xl font-extrabold tracking-normal">
+            <h1 className="text-tw-ntrl-black text-3xl font-extrabold tracking-normal antialiased">
               $1900.<span className="text-2xl">00</span>
             </h1>
           </div>

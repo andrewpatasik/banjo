@@ -9,7 +9,7 @@ type ButtonValue = {
 const ButtonVariants = {
   fab: {
     className:
-      "text-indigo-600 font-bold bg-indigo-400 rounded-full w-20 h-20 shadow-lg shadow-indigo-500/50 p-4",
+      "text-indigo-500 font-bold bg-indigo-400 rounded-full w-20 h-20 shadow-lg shadow-indigo-500/50 p-3",
     icon: <PlusMiniIcon />,
   },
 };
