@@ -5,6 +5,7 @@ const Heading = () => {
       <div className="px-4 flex flex-col space-y-1">
         <div className="flex items-center justify-between">
           <div className="flex space-x-1 items-center">
+            <p className="text-sm text-gray-400 tracking-wider">Hi, Hansen</p>
             <img
               src="/images/waving-hand.webp"
               srcSet="/images/waving-hand.webp"
@@ -12,7 +13,6 @@ const Heading = () => {
               height={20}
               alt="waving hand icon"
             />
-            <p className="text-sm text-gray-400 tracking-wider">Hi, Hansen</p>
           </div>
         </div>
         <div className="flex items-center justify-between">

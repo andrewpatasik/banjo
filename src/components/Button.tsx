@@ -3,7 +3,8 @@ import { PlusMiniIcon } from "../assets";
 
 type ButtonValue = {
   children?: React.ReactNode;
-  variants: "fab";
+  variants: "fab" | "default";
+  className?: string;
 };
 
 const ButtonVariants = {
@@ -14,10 +15,14 @@ const ButtonVariants = {
   },
 };
 
-const Button: FC<ButtonValue> = ({ children, variants}) => {
+const Button: FC<ButtonValue> = ({ className, children, variants }) => {
   return (
-    <button className={ButtonVariants.fab.className}>
-      <>{ButtonVariants[variants].icon}</>
+    <button
+      className={
+        variants !== "default" ? ButtonVariants.fab.className : className
+      }
+    >
+      <>{variants !== "default" ? ButtonVariants[variants].icon : ""}</>
       {children}
     </button>
   );

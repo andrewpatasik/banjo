@@ -1,7 +1,8 @@
 // autocomplete atau template untuk title
 
-import { CalendarMicroIcon } from "../../assets";
+import { CalendarMicroIcon, DoubleChevronIcon } from "../../assets";
 import { Card, Fab, Heading } from "../../components";
+import Button from "../../components/Button";
 import { CardValue } from "../../components/Card";
 
 const dummyBudget: CardValue[] = [
@@ -11,7 +12,7 @@ const dummyBudget: CardValue[] = [
     image: "hot-beverage.webp",
     tag: "Coffee",
     title: "Going out with Grace",
-    iconColor: 'purple'
+    iconColor: "purple",
   },
   {
     amount: "18",
@@ -19,7 +20,7 @@ const dummyBudget: CardValue[] = [
     image: "hamburger.webp",
     tag: "Dine Out",
     title: "McDonalds",
-    iconColor: 'orange'
+    iconColor: "orange",
   },
   {
     amount: "20",
@@ -27,7 +28,7 @@ const dummyBudget: CardValue[] = [
     image: "fuel-pump.webp",
     tag: "Gas",
     title: "Pertamax 2L",
-    iconColor: 'green'
+    iconColor: "green",
   },
 ];
 
@@ -35,9 +36,9 @@ const Dashboard = () => {
   return (
     <div className="relative flex flex-col flex-1 w-full">
       <Heading />
-      <div className="px-4 mt-4 flex items-center justify-between">
+      <div className="px-4 mt-6 flex items-center justify-between">
         <h1 className="text-lg text-tw-ntrl-black font-bold antialiased">
-          Recently Spending
+          Recent Activity
         </h1>
         <div className="flex items-center space-x-1 text-indigo-700 bg-indigo-50 border border-indigo-400 rounded-full px-2.5 py-1">
           <CalendarMicroIcon className="w-5" />
@@ -58,6 +59,19 @@ const Dashboard = () => {
           />
         ))}
       </section>
+      <Button
+        variants="default"
+        className="mx-auto mt-6 text-slate-300 flex items-center font-medium"
+      >
+        <p>See all</p>
+      </Button>
+
+      <div className="px-4 mt-6 flex items-center justify-between">
+        <h1 className="text-lg text-tw-ntrl-black font-bold antialiased">
+          Categories 
+        </h1>
+      </div>
+
       <Fab />
     </div>
   );

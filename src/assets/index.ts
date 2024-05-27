@@ -10,3 +10,4 @@ export { default as PlusCircleSolidIcon } from './PlusCircleSolidIcon';
 export { default as PlusMiniIcon } from './PlusMiniIcon';
 export { default as WalletSolidIcon } from './WalletSolidIcon';
 export { default as CalendarMicroIcon } from './CalendarMicroIcon';
+export { default as DoubleChevronIcon } from './DoubleChevronIcon';
