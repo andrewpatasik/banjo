@@ -1,19 +1,27 @@
+import { CalendarMicroIcon } from "../assets";
 
 const Heading = () => {
   return (
     <>
       <div className="px-4 flex flex-col space-y-1">
         <div className="flex items-center justify-between">
-          <div className="flex space-x-1 items-center">
-            <p className="text-sm text-gray-400 tracking-wider">Hi, Hansen</p>
-            <img
-              src="/images/waving-hand.webp"
-              srcSet="/images/waving-hand.webp"
-              width={20}
-              height={20}
-              alt="waving hand icon"
-            />
-          </div>
+
+            <div className="flex space-x-1 items-center ">
+              <p className="text-sm text-gray-400 tracking-wider">Hi, Hansen</p>
+              <img
+                src="/images/waving-hand.webp"
+                srcSet="/images/waving-hand.webp"
+                width={20}
+                height={20}
+                alt="waving hand icon"
+              />
+            </div>
+
+            <div className="flex items-center space-x-1 text-indigo-700">
+              <CalendarMicroIcon className="w-5" />
+              <p className="text-sm">5 days left in October</p>
+            </div>
+
         </div>
         <div className="flex items-center justify-between">
           <div className="flex flex-col -space-y-1">

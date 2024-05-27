@@ -40,10 +40,6 @@ const Dashboard = () => {
         <h1 className="text-lg text-tw-ntrl-black font-bold antialiased">
           Recent Activity
         </h1>
-        <div className="flex items-center space-x-1 text-indigo-700 bg-indigo-50 border border-indigo-400 rounded-full px-2.5 py-1">
-          <CalendarMicroIcon className="w-5" />
-          <p className="text-sm">5 days left in October</p>
-        </div>
       </div>
 
       <section className="flex flex-col space-y-1 mt-2">
@@ -68,7 +64,7 @@ const Dashboard = () => {
 
       <div className="px-4 mt-6 flex items-center justify-between">
         <h1 className="text-lg text-tw-ntrl-black font-bold antialiased">
-          Categories 
+          All Tags 
         </h1>
       </div>
 
