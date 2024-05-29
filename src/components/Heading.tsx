@@ -17,10 +17,10 @@ const Heading = () => {
               />
             </div>
 
-            <div className="flex items-center space-x-1 text-indigo-700">
+            {/* <div className="flex items-center space-x-1 text-tw-ntrl-black">
               <CalendarMicroIcon className="w-5" />
-              <p className="text-sm">5 days left in October</p>
-            </div>
+              <p className="text-sm font-medium">5 days left in October</p>
+            </div> */}
 
         </div>
         <div className="flex items-center justify-between">
@@ -33,7 +33,7 @@ const Heading = () => {
             </h1>
           </div>
           <div>
-            <ul className="list-outside list-disc -space-y-1.5">
+            {/* <ul className="list-outside list-disc -space-y-1.5">
               <li className="text-red-500">
                 <p className="text-xs font-light text-gray-400 tracking-wider">
                   total spent: <span className="font-bold">$340</span>
@@ -49,7 +49,7 @@ const Heading = () => {
                   most spent: <span className="font-bold">Dine Out</span>
                 </p>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>

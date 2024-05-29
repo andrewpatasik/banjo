@@ -39,7 +39,7 @@ const Card: FC<CardValue> = ({
 }) => {
   return (
     <div className="flex items-center w-full px-4 py-2">
-      <div className="flex items-center space-x-2">
+      <div className="flex basis-2/3 flex-shrink-0 items-center space-x-2">
         <div className={`rounded-full p-4 ${colorVariants[iconColor]}`}>
           <img
             src={`/images/${image}`}
@@ -58,18 +58,18 @@ const Card: FC<CardValue> = ({
             {title}
           </h2>
           <div className="flex space-x-2 items-center text-sm text-slate-400">
-            <p className="tracking-wide">
-              {getFormattedDate(dateTime)}
-            </p>
+            <p className="tracking-wide">{getFormattedDate(dateTime)}</p>
             <p>02.00 pm</p>
           </div>
         </div>
       </div>
-      <div className="ml-auto basis-12 flex flex-col space-y-1">
-        <p className="mx-auto text-xl font-medium tracking-tight text-tw-ntrl-black">
+      <div className="ml-auto flex basis-full items-center">
+        <p className="basis-1/4 mx-auto text-xl font-medium tracking-tight text-tw-ntrl-black">
           {`$${amount}`}
         </p>
-        <ProgressBar />
+        <div className="w-2/4 text-center">
+          <ProgressBar />
+        </div>
       </div>
     </div>
   );

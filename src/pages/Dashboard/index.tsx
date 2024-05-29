@@ -38,7 +38,7 @@ const Dashboard = () => {
       <Heading />
       <div className="px-4 mt-6 flex items-center justify-between">
         <h1 className="text-lg text-tw-ntrl-black font-bold antialiased">
-          Recent Activity
+          Recent Activities
         </h1>
       </div>
 
