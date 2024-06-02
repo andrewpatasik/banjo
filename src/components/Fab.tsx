@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Fab: FC = () => {
   return (
-    <div className="absolute right-10 bottom-[15%] w-auto h-auto">
+    <div className="fixed right-10 bottom-[13%] w-auto h-auto">
       <Button variants={"fab"} />
     </div>
   );

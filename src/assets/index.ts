@@ -11,3 +11,6 @@ export { default as PlusMiniIcon } from './PlusMiniIcon';
 export { default as WalletSolidIcon } from './WalletSolidIcon';
 export { default as CalendarMicroIcon } from './CalendarMicroIcon';
 export { default as DoubleChevronIcon } from './DoubleChevronIcon';
+export { default as ArrowDownRightIcon } from './ArrowDownRightIcon';
+export { default as ArrowUpRightIcon } from './ArrowUpRightIcon';
+export { default as CircleStackIcon } from './CircleStackIcon';

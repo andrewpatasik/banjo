@@ -14,6 +14,7 @@ const colorVariants: any = {
   purple: "bg-purple-500",
   green: "bg-green-500",
   orange: "bg-orange-500",
+  pink: "bg-rose-500"
 };
 
 const getFormattedDate = (datePayload: any) => {
