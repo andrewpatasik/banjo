@@ -6,7 +6,7 @@ export type CardValue = {
   tag: string;
   dateTime: Date;
   title: string;
-  amount: string;
+  amount: number;
   iconColor: string;
 };
 
@@ -14,7 +14,7 @@ const colorVariants: any = {
   purple: "bg-purple-500",
   green: "bg-green-500",
   orange: "bg-orange-500",
-  pink: "bg-rose-500"
+  pink: "bg-rose-500",
 };
 
 const getFormattedDate = (datePayload: any) => {
@@ -30,6 +30,22 @@ const getFormattedDate = (datePayload: any) => {
   return formattedToday;
 };
 
+const calculateProgressValue = (amount: number) => {
+  // category limit - amount
+  const DUMMYLIMIT = 100;
+  const currentAmount = Math.floor((amount / DUMMYLIMIT) * 100);
+  const currentLimit = 100;
+  return currentLimit - currentAmount;
+};
+
+const setProgressBarColor = (progressValue: number): 'green' | 'orange' | 'red' => {
+
+  if (progressValue > 40 && progressValue <= 100) return "green";
+  else if (progressValue > 30 && progressValue <= 40) return "orange";
+
+  return "red";
+};
+
 const Card: FC<CardValue> = ({
   amount,
   dateTime,
@@ -38,6 +54,7 @@ const Card: FC<CardValue> = ({
   title,
   iconColor,
 }) => {
+
   return (
     <div className="flex items-center w-full px-4 py-2">
       <div className="flex basis-2/3 flex-shrink-0 items-center space-x-2">
@@ -69,7 +86,7 @@ const Card: FC<CardValue> = ({
           {`$${amount}`}
         </p>
         <div className="w-2/4 text-center">
-          <ProgressBar />
+          <ProgressBar color={setProgressBarColor(calculateProgressValue(amount))} progressValue={calculateProgressValue(amount)} />
         </div>
       </div>
     </div>

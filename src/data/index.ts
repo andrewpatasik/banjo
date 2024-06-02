@@ -2,7 +2,7 @@ import { CardValue } from "../components/Card";
 
 export const dummyBudget: CardValue[] = [
   {
-    amount: "12",
+    amount: 42,
     dateTime: new Date(),
     image: "hot-beverage.webp",
     tag: "Coffee",
@@ -10,7 +10,7 @@ export const dummyBudget: CardValue[] = [
     iconColor: "purple",
   },
   {
-    amount: "18",
+    amount: 70,
     dateTime: new Date(),
     image: "hamburger.webp",
     tag: "Dine Out",
@@ -18,7 +18,7 @@ export const dummyBudget: CardValue[] = [
     iconColor: "orange",
   },
   {
-    amount: "20",
+    amount: 60,
     dateTime: new Date(),
     image: "fuel-pump.webp",
     tag: "Gas",
@@ -29,7 +29,7 @@ export const dummyBudget: CardValue[] = [
 
 export const dummyCategories: CardValue[] = [
   {
-    amount: "310",
+    amount: 10,
     dateTime: new Date(),
     image: "hamburger.webp",
     tag: "Dine Out",
@@ -37,7 +37,7 @@ export const dummyCategories: CardValue[] = [
     iconColor: "orange",
   },
   {
-    amount: "310",
+    amount: 40,
     dateTime: new Date(),
     image: "hamburger.webp",
     tag: "Dine Out",
@@ -45,7 +45,7 @@ export const dummyCategories: CardValue[] = [
     iconColor: "orange",
   },
   {
-    amount: "110",
+    amount: 80,
     dateTime: new Date(),
     image: "takeout-box.webp",
     tag: "Takeaway",
@@ -53,7 +53,7 @@ export const dummyCategories: CardValue[] = [
     iconColor: "pink",
   },
   {
-    amount: "200",
+    amount: 60,
     dateTime: new Date(),
     image: "fuel-pump.webp",
     tag: "Gas",
