@@ -13,4 +13,6 @@ export { default as CalendarMicroIcon } from './CalendarMicroIcon';
 export { default as DoubleChevronIcon } from './DoubleChevronIcon';
 export { default as ArrowDownRightIcon } from './ArrowDownRightIcon';
 export { default as ArrowUpRightIcon } from './ArrowUpRightIcon';
+export { default as ArrowLongRightIcon } from './ArrowLongRightIcon';
+export { default as CreditCardIcon } from './CreditCardIcon';
 export { default as CircleStackIcon } from './CircleStackIcon';

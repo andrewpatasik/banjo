@@ -2,7 +2,7 @@ import { CardValue } from "../components/Card";
 
 export const dummyBudget: CardValue[] = [
   {
-    amount: 42,
+    amount: 32,
     dateTime: new Date(),
     image: "hot-beverage.webp",
     tag: "Coffee",
@@ -10,7 +10,7 @@ export const dummyBudget: CardValue[] = [
     iconColor: "purple",
   },
   {
-    amount: 70,
+    amount: 60,
     dateTime: new Date(),
     image: "hamburger.webp",
     tag: "Dine Out",
@@ -18,7 +18,7 @@ export const dummyBudget: CardValue[] = [
     iconColor: "orange",
   },
   {
-    amount: 60,
+    amount: 85,
     dateTime: new Date(),
     image: "fuel-pump.webp",
     tag: "Gas",

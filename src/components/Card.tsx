@@ -69,16 +69,14 @@ const Card: FC<CardValue> = ({
         </div>
 
         <div className="flex flex-col -space-y-1 antialiased">
-          <div className="text-sm text-slate-400 font-medium">
+          <div className="flex space-x-1.5 items-center text-sm text-slate-400 font-medium">
             <p>{tag}</p>
+            <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
+            <p className="text-slate-300">2 days ago</p>
           </div>
           <h2 className="font-medium antialiased text-tw-ntrl-black">
             {title}
           </h2>
-          <div className="flex space-x-2 items-center text-sm text-slate-400">
-            <p className="tracking-wide">{getFormattedDate(dateTime)}</p>
-            <p>02.00 pm</p>
-          </div>
         </div>
       </div>
       <div className="ml-auto flex basis-full items-center">
