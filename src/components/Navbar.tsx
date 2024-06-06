@@ -2,14 +2,13 @@ import { Link } from "react-router-dom";
 import {
   AdjusmentHorizontalOutlineIcon,
   AdjusmentHorizontalSolidIcon,
-  CalendarMicroIcon,
   HomeOutlineIcon,
   HomeSolidIcon,
-  PieChartOutlineIcon,
-  PieChartSolidIcon,
   UserRoundedIcon,
+  WalletSolidIcon,
 } from "../assets";
 import NavigationLink from "./NavigationLink";
+import WalletOutlineIcon from "../assets/WalletOutlineIcon";
 
 const Navbar = () => {
   return (
@@ -56,14 +55,14 @@ const Navbar = () => {
               to="/history"
               activeIcon={
                 <div className="flex flex-col items-center justify-center space-y-1">
-                  <PieChartSolidIcon width="w-6 h-6" />
-                  <span className="text-sm">History</span>
+                  <WalletSolidIcon className="w-6" />
+                  <span className="text-sm">My Wallet</span>
                 </div>
               }
               inactiveIcon={
                 <div className="flex flex-col items-center justify-center space-y-1">
-                  <PieChartOutlineIcon width="w-6 h-6" />
-                  <span className="text-sm">History</span>
+                  <WalletOutlineIcon className="w-6" />
+                  <span className="text-sm">My Wallet</span>
                 </div>
               }
             ></NavigationLink>

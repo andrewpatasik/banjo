@@ -1,6 +1,4 @@
 import {
-  ArrowDownRightIcon,
-  ArrowUpRightIcon,
   CalendarMicroIcon,
   CreditCardIcon,
 } from "../assets";
@@ -40,7 +38,7 @@ const Heading = () => {
               $1900.<span className="text-2xl">00</span>
             </h1>
           </div>
-          <ul className="flex space-x-1">
+          {/* <ul className="flex space-x-1">
             <li className="flex items-center -space-x-.5">
               <ArrowDownRightIcon className="text-green-500 w-5" />
               <p className="text-xs text-slate-400 font-medium">$2000</p>
@@ -49,7 +47,7 @@ const Heading = () => {
               <ArrowUpRightIcon className="text-red-500 w-5" />
               <p className="text-xs text-slate-400 font-medium">$700</p>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </>
