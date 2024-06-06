@@ -1,9 +1,18 @@
-const ProgressBar = ({ className }: { className?: string }) => (
-  // <div
-  //   className={`relative bg-gray-200 w-full h-1.5 rounded-full ${className}`}
-  // >
-  //   <div className="absolute inset-0 w-2/3 h-auto bg-green-500 rounded-full"></div>
-  // </div>
+const colorVariants = {
+  green: "text-green-500",
+  orange: "text-orange-500",
+  red: "text-red-500",
+};
+
+const ProgressBar = ({
+  className,
+  color,
+  progressValue
+}: {
+  className?: string;
+  color?: "green" | "orange" | "red";
+  progressValue: number
+}) => (
   <div className="relative w-12 h-12">
     <svg className="w-full h-full" viewBox="0 0 100 100">
       <circle
@@ -16,7 +25,9 @@ const ProgressBar = ({ className }: { className?: string }) => (
       ></circle>
 
       <circle
-        className="text-green-500 stroke-current origin-center -rotate-90"
+        className={`${
+          color ? colorVariants[color] : colorVariants.green
+        } stroke-current origin-center -rotate-90`}
         strokeWidth={10}
         strokeLinecap="round"
         cx={50}
@@ -24,10 +35,9 @@ const ProgressBar = ({ className }: { className?: string }) => (
         r={40}
         fill="transparent"
         strokeDasharray={251.2}
-        strokeDashoffset={Math.round(251.1 - (251.1 * 70) / 100)}
+        strokeDashoffset={Math.round(251.1 - (251.1 * progressValue) / 100)}
       ></circle>
     </svg>
-
   </div>
 );
 

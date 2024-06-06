@@ -5,7 +5,7 @@ import { createBrowserRouter, Route, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 import Dashboard from "./pages/Dashboard";
-import History from "./pages/History";
+import MyWallet from "./pages/MyWallet";
 import MainLayout from "./pages/MainLayout";
 import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
@@ -29,8 +29,8 @@ const router = createBrowserRouter([
             element: <Dashboard />
           },
           {
-            path: "history",
-            element: <History />
+            path: "mywallet",
+            element: <MyWallet />
           },
           {
             path: "settings",

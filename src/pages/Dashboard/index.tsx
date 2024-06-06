@@ -1,5 +1,6 @@
 // autocomplete atau template untuk title
 
+import { ArrowLongRightIcon } from "../../assets";
 import { Card, Fab, Heading } from "../../components";
 import Button from "../../components/Button";
 import { dummyBudget, dummyCategories } from "../../data";
@@ -34,9 +35,10 @@ const Dashboard = () => {
       </section>
       <Button
         variants="default"
-        className="mx-auto mt-6 text-slate-300 flex items-center font-medium"
+        className="mx-auto mt-2 mb-4 px-4 text-slate-300 flex justify-center items-center font-medium space-x-1"
       >
         <p>See Complete List</p>
+        <ArrowLongRightIcon className="w-6 h-6" />
       </Button>
 
       <div className="px-4 mt-3 flex items-center justify-between">

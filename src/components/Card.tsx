@@ -6,7 +6,7 @@ export type CardValue = {
   tag: string;
   dateTime: Date;
   title: string;
-  amount: string;
+  amount: number;
   iconColor: string;
 };
 
@@ -14,7 +14,7 @@ const colorVariants: any = {
   purple: "bg-purple-500",
   green: "bg-green-500",
   orange: "bg-orange-500",
-  pink: "bg-rose-500"
+  pink: "bg-rose-500",
 };
 
 const getFormattedDate = (datePayload: any) => {
@@ -30,6 +30,22 @@ const getFormattedDate = (datePayload: any) => {
   return formattedToday;
 };
 
+const calculateProgressValue = (amount: number) => {
+  // category limit - amount
+  const DUMMYLIMIT = 100;
+  const currentAmount = Math.floor((amount / DUMMYLIMIT) * 100);
+  const currentLimit = 100;
+  return currentLimit - currentAmount;
+};
+
+const setProgressBarColor = (progressValue: number): 'green' | 'orange' | 'red' => {
+
+  if (progressValue > 40 && progressValue <= 100) return "green";
+  else if (progressValue > 30 && progressValue <= 40) return "orange";
+
+  return "red";
+};
+
 const Card: FC<CardValue> = ({
   amount,
   dateTime,
@@ -38,6 +54,7 @@ const Card: FC<CardValue> = ({
   title,
   iconColor,
 }) => {
+
   return (
     <div className="flex items-center w-full px-4 py-2">
       <div className="flex basis-2/3 flex-shrink-0 items-center space-x-2">
@@ -52,16 +69,14 @@ const Card: FC<CardValue> = ({
         </div>
 
         <div className="flex flex-col -space-y-1 antialiased">
-          <div className="text-sm text-slate-400 font-medium">
+          <div className="flex space-x-1.5 items-center text-sm text-slate-400 font-medium">
             <p>{tag}</p>
+            <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
+            <p className="text-slate-300">2 days ago</p>
           </div>
           <h2 className="font-medium antialiased text-tw-ntrl-black">
             {title}
           </h2>
-          <div className="flex space-x-2 items-center text-sm text-slate-400">
-            <p className="tracking-wide">{getFormattedDate(dateTime)}</p>
-            <p>02.00 pm</p>
-          </div>
         </div>
       </div>
       <div className="ml-auto flex basis-full items-center">
@@ -69,7 +84,7 @@ const Card: FC<CardValue> = ({
           {`$${amount}`}
         </p>
         <div className="w-2/4 text-center">
-          <ProgressBar />
+          <ProgressBar color={setProgressBarColor(calculateProgressValue(amount))} progressValue={calculateProgressValue(amount)} />
         </div>
       </div>
     </div>

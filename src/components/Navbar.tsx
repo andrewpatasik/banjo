@@ -4,25 +4,26 @@ import {
   AdjusmentHorizontalSolidIcon,
   HomeOutlineIcon,
   HomeSolidIcon,
-  PieChartOutlineIcon,
-  PieChartSolidIcon,
   UserRoundedIcon,
+  WalletSolidIcon,
 } from "../assets";
 import NavigationLink from "./NavigationLink";
+import WalletOutlineIcon from "../assets/WalletOutlineIcon";
 
 const Navbar = () => {
   return (
     <div>
       {/* Topbar */}
-      <nav className="sticky top-0 w-full flex justify-between p-3">
+      <nav className="sticky top-0 w-full py-6 flex justify-between items-center p-3">
         <div>
-          <h1 className="text-3xl">Banjo</h1>
+          <div className="w-16 h-16 bg-indigo-400 rounded-lg"></div>
         </div>
+
         <ul className="flex items-center space-x-3">
           <li>
             <Link to="/profile">
               <div className="flex flex-col items-center justify-center space-y-1">
-                <UserRoundedIcon width="w-12 h-12" />
+                <UserRoundedIcon className="w-16 h-16" />
               </div>
             </Link>
           </li>
@@ -54,14 +55,14 @@ const Navbar = () => {
               to="/history"
               activeIcon={
                 <div className="flex flex-col items-center justify-center space-y-1">
-                  <PieChartSolidIcon width="w-6 h-6" />
-                  <span className="text-sm">History</span>
+                  <WalletSolidIcon className="w-6" />
+                  <span className="text-sm">My Wallet</span>
                 </div>
               }
               inactiveIcon={
                 <div className="flex flex-col items-center justify-center space-y-1">
-                  <PieChartOutlineIcon width="w-6 h-6" />
-                  <span className="text-sm">History</span>
+                  <WalletOutlineIcon className="w-6" />
+                  <span className="text-sm">My Wallet</span>
                 </div>
               }
             ></NavigationLink>
@@ -82,7 +83,6 @@ const Navbar = () => {
                 </div>
               }
             ></NavigationLink>
-
           </li>
         </ul>
       </nav>
