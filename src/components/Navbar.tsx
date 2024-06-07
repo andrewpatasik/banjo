@@ -52,7 +52,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavigationLink
-              to="/history"
+              to="/mywallet"
               activeIcon={
                 <div className="flex flex-col items-center justify-center space-y-1">
                   <WalletSolidIcon className="w-6" />
