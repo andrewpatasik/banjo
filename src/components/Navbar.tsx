@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Topbar */}
-      <nav className="sticky top-0 w-full py-6 flex justify-between items-center p-3">
+      <nav className="sticky top-0 w-full py-6 flex justify-between items-center px-4">
         <div>
           <div className="w-16 h-16 bg-indigo-400 rounded-lg"></div>
         </div>

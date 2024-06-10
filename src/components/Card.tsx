@@ -38,8 +38,9 @@ const calculateProgressValue = (amount: number) => {
   return currentLimit - currentAmount;
 };
 
-const setProgressBarColor = (progressValue: number): 'green' | 'orange' | 'red' => {
-
+const setProgressBarColor = (
+  progressValue: number
+): "green" | "orange" | "red" => {
   if (progressValue > 40 && progressValue <= 100) return "green";
   else if (progressValue > 30 && progressValue <= 40) return "orange";
 
@@ -54,7 +55,6 @@ const Card: FC<CardValue> = ({
   title,
   iconColor,
 }) => {
-
   return (
     <div className="flex items-center w-full px-4 py-2">
       <div className="flex basis-2/3 flex-shrink-0 items-center space-x-2">
@@ -69,10 +69,10 @@ const Card: FC<CardValue> = ({
         </div>
 
         <div className="flex flex-col -space-y-1 antialiased">
-          <div className="flex space-x-1.5 items-center text-sm text-slate-400 font-medium">
+          <div className="flex space-x-1.5 items-center text-sm text-slate-500 font-medium">
             <p>{tag}</p>
             <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
-            <p className="text-slate-300">2 days ago</p>
+            <p className="text-slate-400">2 days ago</p>
           </div>
           <h2 className="font-medium antialiased text-tw-ntrl-black">
             {title}
@@ -84,7 +84,10 @@ const Card: FC<CardValue> = ({
           {`$${amount}`}
         </p>
         <div className="w-2/4 text-center">
-          <ProgressBar color={setProgressBarColor(calculateProgressValue(amount))} progressValue={calculateProgressValue(amount)} />
+          <ProgressBar
+            color={setProgressBarColor(calculateProgressValue(amount))}
+            progressValue={calculateProgressValue(amount)}
+          />
         </div>
       </div>
     </div>
