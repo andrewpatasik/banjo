@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Topbar */}
-      <nav className="sticky top-0 w-full py-6 flex justify-between items-center p-3">
+      <nav className="sticky top-0 w-full py-6 flex justify-between items-center px-4">
         <div>
           <div className="w-16 h-16 bg-indigo-400 rounded-lg"></div>
         </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavigationLink
-              to="/history"
+              to="/mywallet"
               activeIcon={
                 <div className="flex flex-col items-center justify-center space-y-1">
                   <WalletSolidIcon className="w-6" />
